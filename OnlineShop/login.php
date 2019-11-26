@@ -44,7 +44,6 @@ body, div {
 	font-family: 'Kanit', sans-serif;
 }
 
-
 /* Full-width input fields */
 input[type=text], input[type=password] {
 	width: 100%;
@@ -92,7 +91,6 @@ img.avatar {
 /* .container { */
 /* 	padding: 16px; */
 /* } */
-
 span.psw {
 	float: right;
 	padding-top: 16px;
@@ -176,11 +174,13 @@ to {
 }
 
 .content {
-  max-width: 500px;
-  margin: auto;
-  background: white;
-  padding: 10px;
+	max-width: 500px;
+	margin: auto;
+	background: white;
+	padding: 10px;
 }
+
+
 </style>
 </head>
 <body>
@@ -210,10 +210,11 @@ to {
 					</div>
 					<div class="icons">
 						<a href="cart.html" class="icons-btn d-inline-block bag"> <span
-							class="icon-shopping-bag"></span> <!-- จำนวนตามตระกร้าสินค้า --><span class="number">2</span>
+							class="icon-shopping-bag"></span> <!-- จำนวนตามตระกร้าสินค้า -->
+							<span class="number">2</span>
 						</a>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
@@ -271,34 +272,6 @@ to {
 					</form>
 				</div>
 			</div>
-
-
-
-			<div id="id02" class="modal">
-				<span onclick="document.getElementById('id02').style.display='none'"
-					class="close" title="Close Modal">&times;</span>
-				<form class="modal-content" action="/action_page.php">
-					<div class="container">
-						<h1>Sign Up</h1>
-						<p>Please fill in this form to create an account.</p>
-						<hr>
-						<label for="email"><b>Email</b></label> <input type="text"
-							placeholder="Enter Email" name="email" required> <label for="psw"><b>Password</b></label>
-						<input type="password" placeholder="Enter Password" name="psw"
-							required> <label for="psw-repeat"><b>Repeat Password</b></label>
-						<input type="password" placeholder="Repeat Password"
-							name="psw-repeat" required> <label>
-
-							<div class="clearfix">
-								<button type="button"
-									onclick="document.getElementById('id02').style.display='none'"
-									class="cancelbtn">Cancel</button>
-								<button type="submit" class="signupbtn">Sign Up</button>
-							</div>
-					
-					</div>
-				</form>
-			</div>
 		</div>
 	</div>
 
@@ -323,13 +296,6 @@ window.onclick = function(event) {
     }
 }
 
-var modal = document.getElementById('id02');
-
-//When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-if (event.target == modal) {
- modal.style.display = "none";
-}
 }
 </script>
 </body>
