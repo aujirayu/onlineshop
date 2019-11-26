@@ -43,147 +43,12 @@
 body, div {
 	font-family: 'Kanit', sans-serif;
 }
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-	background-color: #4CAF50;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-}
-
-button:hover {
-	opacity: 0.8;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-	width: auto;
-	padding: 10px 18px;
-	background-color: #f44336;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-	text-align: center;
-	margin: 24px 0 12px 0;
-	position: relative;
-}
-
-img.avatar {
-	width: 40%;
-	border-radius: 50%;
-}
-
-/* .container { */
-/* 	padding: 16px; */
-/* } */
-span.psw {
-	float: right;
-	padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-	padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-	background-color: #fefefe;
-	margin: 5% auto 15% auto;
-	/* 5% from the top, 15% from the bottom and centered */
-	border: 1px solid #888;
-	width: 20%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-	position: absolute;
-	right: 35px;
-	top: 15px;
-	font-size: 40px;
-	font-weight: bold;
-	color: #f1f1f1;
-}
-
-.close:hover, .close:focus {
-	color: #f44336;
-	cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-	-webkit-animation: animatezoom 0.6s;
-	animation: animatezoom 0.6s
-}
-
-@
--webkit-keyframes animatezoom {
-	from {-webkit-transform: scale(0)
-}
-
-to {
-	-webkit-transform: scale(1)
-}
-
-}
-@
-keyframes animatezoom {
-	from {transform: scale(0)
-}
-
-to {
-	transform: scale(1)
-}
-
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-	span.psw {
-		display: block;
-		float: none;
-	}
-	.cancelbtn {
-		width: 100%;
-	}
-}
-
-.content {
-	max-width: 500px;
-	margin: auto;
-	background: white;
-	padding: 10px;
-}
-
-
 </style>
 </head>
 <body>
+	<script>
+
+</script>
 
 	<div class="site-wrap">
 
@@ -233,70 +98,75 @@ to {
 		</div>
 
 
+		<!-- ส่วนกลาง -->
 		<div class="site-section">
-			<div class="container">
-				<div align="center">
-					<p>
-						<button
-							onclick="document.getElementById('id01').style.display='block'"
-							style="width: 100px;">Login</button>
-						<br>
-						<button
-							onclick="document.getElementById('id02').style.display='block'"
-							style="width: 100px; background-color: #ff9800;">Sign Up</button>
-					</p>
-				</div>
-
-				<div id="id01" class="modal">
-					<span
-						onclick="document.getElementById('id01').style.display='none'"
-						class="close" title="Close Modal">&times;</span>
-					<form class="modal-content animate" action="/action_page.php"
-						method="post">
-						<div class="imgcontainer"></div>
-
-						<div class="container">
-							<label for="uname"><b>Username</b></label> <input type="text"
-								placeholder="Enter Username" name="uname" required> <label
-								for="psw"><b>Password</b></label> <input type="password"
-								placeholder="Enter Password" name="psw" required>
-
-							<button type="submit">Login</button>
-						</div>
-						<div class="container" style="background-color: #f1f1f1">
-							<button type="button"
-								onclick="document.getElementById('id01').style.display='none'"
-								class="cancelbtn">Cancel</button>
-							<span class="psw">Forgot <a href="#">password?</a></span>
-						</div>
-					</form>
-				</div>
-			</div>
+			<div class="container">				
+		<div class="container">
+        <form class="form-horizontal" role="form" method="POST" action="">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <h2 align="center">เข้าสู่ระบบ</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="form-group has-danger">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">                           
+                            <input type="text" name="txtUsername" class="form-control" id="txtUsername"
+                                   placeholder="Username"  required autofocus>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">                          
+                            <input type="password" name="txtPassword" class="form-control" id="txtPassword"
+                                   placeholder="Password" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" style="padding-top: .35rem">
+                    <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                        <label class="form-check-label">
+                            <input class="form-check-input" name="remember"
+                                   type="checkbox" >
+                            <span style="padding-bottom: .15rem">เข้าสู่ระบบค้างไว้</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 1rem">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-success"><i class="fa fa-sign-in"></i>เข้าสู่ระบบ</button>
+                    <a class="btn btn-link" href="/password/reset">จำรหัสผ่านไม่ได้?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    			</div>
 		</div>
-	</div>
+	
+		</div>
 
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/aos.js"></script>
 
-	<script src="js/main.js"></script>
+		<script src="js/main.js"></script>
 
-	<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-}
-</script>
 </body>
 </html>

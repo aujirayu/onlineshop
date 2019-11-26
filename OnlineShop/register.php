@@ -100,7 +100,7 @@ function fncSubmit(){
 				<div class="row">
 					<div class="col-md-12 mb-0">
 						<a href="index.php">หน้าหลัก</a> <span class="mx-2 mb-0">/</span>
-						<strong class="text-black">เข้าสู่ระบบ</strong>
+						<strong class="text-black">สมัครสมาชิก</strong>
 					</div>
 				</div>
 			</div>
