@@ -22,18 +22,18 @@
 
 <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap"
 	rel="stylesheet">
-<link rel="stylesheet" href="fonts/icomoon/style.css">
+<link rel="stylesheet" href="../fonts/icomoon/style.css">
 
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/magnific-popup.css">
-<link rel="stylesheet" href="css/jquery-ui.css">
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/magnific-popup.css">
+<link rel="stylesheet" href="../css/jquery-ui.css">
+<link rel="stylesheet" href="../css/owl.carousel.min.css">
+<link rel="stylesheet" href="../css/owl.theme.default.min.css">
 
 
-<link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="../css/aos.css">
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/style.css">
 
 <style>
 @import
@@ -116,7 +116,7 @@ body, div {
                     <div class="form-group has-danger">
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">                           
                             <input type="text" name="txtUsername" class="form-control" id="txtUsername"
-                                   placeholder="Username"  required autofocus>
+                                   placeholder="Username">
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@ body, div {
                     <div class="form-group">
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">                          
                             <input type="password" name="txtPassword" class="form-control" id="txtPassword"
-                                   placeholder="Password" required>
+                                   placeholder="Password">
                         </div>
                     </div>
                 </div>
@@ -146,27 +146,40 @@ body, div {
             </div>
             <div class="row" style="padding-top: 1rem">
                 <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <button type="submit" class="btn btn-success"><i class="fa fa-sign-in"></i>เข้าสู่ระบบ</button>
-                    <a class="btn btn-link" href="/password/reset">จำรหัสผ่านไม่ได้?</a>
+                <div class="col-md-6" align="center">
+                    <button type="submit" class="btn btn-success"><i class="fa fa-sign-in"></i>เข้าสู่ระบบ</button>                                      
                 </div>
             </div>
         </form>
+            <div class="row" style="padding-top: 1rem">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" align="center">
+                <button class="btn btn-warning" onClick="document.location.href='../register/register.php'">สมัครสมาชิก</button>
+                    </div>
+                </div>
+                            <div class="row" style="padding-top: 1rem">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" align="center">
+                <a class="btn btn-link" href="/password/reset">จำรหัสผ่านไม่ได้?</a>
+                    </div>
+                </div>
+            
+
     </div>
     			</div>
 		</div>
 	
 		</div>
 
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/jquery-ui.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/aos.js"></script>
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/jquery-ui.js"></script>
+		<script src="../js/popper.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/owl.carousel.min.js"></script>
+		<script src="../js/jquery.magnific-popup.min.js"></script>
+		<script src="../js/aos.js"></script>
 
-		<script src="js/main.js"></script>
+		<script src="../js/main.js"></script>
 
 </body>
 </html>
