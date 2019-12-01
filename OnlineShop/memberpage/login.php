@@ -65,7 +65,7 @@ body, div {
 						<nav class="site-navigation text-right text-md-center"
 							role="navigation">
 							<ul class="site-menu js-clone-nav d-none d-lg-block">
-								<li><a href="index.php" style='font-size: 18px'>หน้าหลัก</a></li>
+								<li><a href="../index.php" style='font-size: 18px'>หน้าหลัก</a></li>
 
 
 								<li><a href="../product.php" style='font-size: 18px'>สินค้า</a></li>
