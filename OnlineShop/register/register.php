@@ -68,23 +68,23 @@ function fncSubmit(){
 				<div class="d-flex align-items-center justify-content-between">
 					<div>
 						<div>
-							<a href="index.php" class="navbar-brand;" style='font-size: 24px'>สารปรับปรุงดินขี้แดดนาเกลือ</a>
+							<a href="../index.php" class="navbar-brand;" style='font-size: 24px'>สารปรับปรุงดินขี้แดดนาเกลือ</a>
 						</div>
 					</div>
 					<div class="main-nav d-none d-lg-block">
 						<nav class="site-navigation text-right text-md-center"
 							role="navigation">
 							<ul class="site-menu js-clone-nav d-none d-lg-block">
-								<li><a href="index.php" style='font-size: 18px'>หน้าหลัก</a></li>
+								<li><a href="../index.php" style='font-size: 18px'>หน้าหลัก</a></li>
 
 
-								<li><a href="product.php" style='font-size: 18px'>สินค้า</a></li>
-								<li><a href="contact.php" style='font-size: 18px'>ติดต่อ</a></li>
+								<li><a href="../product.php" style='font-size: 18px'>สินค้า</a></li>
+								<li><a href="../contact.php" style='font-size: 18px'>ติดต่อ</a></li>
 							</ul>
 						</nav>
 					</div>
 					<div class="icons">
-						<a href="cart.html" class="icons-btn d-inline-block bag"> <span
+						<a href="../cart.html" class="icons-btn d-inline-block bag"> <span
 							class="icon-shopping-bag"></span> <!-- จำนวนตามตระกร้าสินค้า -->
 							<span class="number">2</span>
 						</a>
@@ -100,7 +100,7 @@ function fncSubmit(){
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 mb-0">
-						<a href="index.php">หน้าหลัก</a> <span class="mx-2 mb-0">/</span>
+						<a href="../index.php">หน้าหลัก</a> <span class="mx-2 mb-0">/</span>
 						<strong class="text-black">สมัครสมาชิก</strong>
 					</div>
 				</div>

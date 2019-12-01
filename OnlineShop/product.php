@@ -101,6 +101,7 @@ body, div {
 						</nav>
 					</div>
 					<div class="icons">
+					<a href="memberpage/login.php" style='font-size: 16px'>เข้าสู่ระบบ</a>
 						<a href="cart.html" class="icons-btn d-inline-block bag"> <span
 							class="icon-shopping-bag"></span> <!-- จำนวนตามตระกร้าสินค้า --><span class="number">2</span>
 						</a>

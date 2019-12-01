@@ -58,7 +58,7 @@ body, div {
 				<div class="d-flex align-items-center justify-content-between">
 					<div>
 						<div>
-							<a href="index.php" class="navbar-brand;" style='font-size: 24px'>สารปรับปรุงดินขี้แดดนาเกลือ</a>
+							<a href="../index.php" class="navbar-brand;" style='font-size: 24px'>สารปรับปรุงดินขี้แดดนาเกลือ</a>
 						</div>
 					</div>
 					<div class="main-nav d-none d-lg-block">
@@ -68,13 +68,13 @@ body, div {
 								<li><a href="index.php" style='font-size: 18px'>หน้าหลัก</a></li>
 
 
-								<li><a href="product.php" style='font-size: 18px'>สินค้า</a></li>
-								<li><a href="contact.php" style='font-size: 18px'>ติดต่อ</a></li>
+								<li><a href="../product.php" style='font-size: 18px'>สินค้า</a></li>
+								<li><a href="../contact.php" style='font-size: 18px'>ติดต่อ</a></li>
 							</ul>
 						</nav>
 					</div>
 					<div class="icons">
-						<a href="cart.html" class="icons-btn d-inline-block bag"> <span
+						<a href="../cart.html" class="icons-btn d-inline-block bag"> <span
 							class="icon-shopping-bag"></span> <!-- จำนวนตามตระกร้าสินค้า -->
 							<span class="number">2</span>
 						</a>
@@ -102,7 +102,7 @@ body, div {
 		<div class="site-section">
 			<div class="container">				
 		<div class="container">
-        <form class="form-horizontal" role="form" method="POST" action="">
+        <form class="form-horizontal" role="form1" method="POST" action="check_login.php">
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
