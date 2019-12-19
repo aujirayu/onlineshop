@@ -75,6 +75,11 @@ body, div {
 </style>
 
 </head>
+<?php
+include $con = "connect/connect.php";
+$strSQL = "SELECT * FROM product ";
+$objQuery = mysqli_query($con,$strSQL)  or die(mysqli_error());
+?>
 <body>
 
 	<div class="site-wrap">
@@ -139,32 +144,27 @@ body, div {
 							<div class="products-wrap border-top-0">
 								<div class="container-fluid">
 									<div class="row gutters products">
+									<?php
+while($objResult = mysqli_fetch_array($objQuery))
+{
+?>
 
-										<div class="col-6 col-md-6 col-lg-6">
+										<div class="col-8 col-md-10 col-lg-8">
 											<div class="card">
 												<img src="images/none.jpg" alt="Denim Jeans"
 													style="width: 100%">
-												<h1>ชื่อสินค้า</h1>
-												<p class="price">ราคาสินค้า</p>
-												<p>รายละเอียดสินค้า</p>
+												<h4><?php echo $objResult["productName"];?></h4>
+												<p class="price"><?php echo $objResult["price"];?></p>
+												<p><?php echo $objResult["description"];?><p>
 												<p>
 													<button>ใส่ตระกร้า</button>
 												</p>
 											</div>
 										</div>
 
-										<div class="col-6 col-md-6 col-lg-6">
-											<div class="card">
-												<img src="images/none.jpg" alt="Denim Jeans"
-													style="width: 100%">
-												<h1>ชื่อสินค้า</h1>
-												<p class="price">ราคาสินค้า</p>
-												<p>รายละเอียดสินค้า</p>
-												<p>
-													<button>ใส่ตระกร้า</button>
-												</p>
-											</div>
-										</div>
+												<?php
+}
+?>
 									</div>
 								</div>
 							</div>
@@ -174,6 +174,7 @@ body, div {
 
 			</div>
 		</div>
+
 
 
 		<footer class="site-footer custom-border-top">
